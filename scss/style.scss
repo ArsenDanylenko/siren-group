@@ -7,3 +7,96 @@
 // Blocks
 @import "header";
 @import "footer";
+
+// ==== NAVBAR ====
+nav {
+   .logo {
+      &__title {
+         font-weight: 700;
+         font-size: 24.1743px;
+         line-height: 29px;
+         span {
+            color: #ff8d00;
+         }
+      }
+      &__subtitle {
+         margin-bottom: 0;
+         text-transform: uppercase;
+         font-weight: 500;
+         font-size: 9px;
+         line-height: 11px;
+         letter-spacing: 0.15em;
+         opacity: 0.8;
+      }
+   }
+   .linkToForm {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+   }
+}
+
+// HERO section
+.hero {
+   &__title {
+      font-weight: 600;
+      font-size: 23px;
+      line-height: 28px;
+      span {
+         background-color: #52c41a;
+         border-radius: 4px;
+         padding: 0px 2px;
+      }
+   }
+   &__subtitle {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 20px;
+   }
+   &__img {
+      position: relative;
+      &_main {
+         border-radius: 20px;
+      }
+      &_nbc {
+         position: absolute;
+         bottom: 8px;
+         right: 18px;
+         background-color: #fff;
+         border-radius: 8px;
+         padding: 8px;
+         display: flex;
+         flex-direction: row;
+         gap: 4px;
+         align-items: center;
+         justify-content: center;
+         p {
+            font-family: $sans;
+            font-weight: 700;
+            font-size: 11px;
+            line-height: 16px;
+            color: black;
+         }
+         img {
+            max-width: 24px;
+            max-height: 24px;
+         }
+         p,
+         img {
+            margin: 0;
+            padding: 0;
+         }
+      }
+   }
+}
+
+//  ==== MAIN CONTENT ====
+.advantages {
+   &__text {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #263238;
+      margin-bottom: 0;
+   }
+}
