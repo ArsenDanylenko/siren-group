@@ -87,9 +87,9 @@ body {
   font-weight: 400;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1400px) {
   .container {
-    max-width: 830px;
+    max-width: 1170px;
   }
 }
 
@@ -103,7 +103,6 @@ nav .logo__title span {
 }
 nav .logo__subtitle {
   margin-bottom: 0;
-  text-transform: uppercase;
   font-weight: 500;
   font-size: 9px;
   line-height: 11px;
@@ -182,4 +181,34 @@ nav .linkToForm {
   line-height: 24px;
   color: #263238;
   margin-bottom: 0;
+}
+
+.affordableSmall {
+  background: #f5f6fe;
+  border: 1px solid #fa8c16;
+  border-radius: 8px;
+}
+.affordableSmall p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #263238;
+}
+
+.mainCard__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 36px;
+}
+.mainCard .inputZip__title {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 32px;
+}
+.mainCard .inputZip p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  color: #646464;
 }

@@ -21,7 +21,6 @@ nav {
       }
       &__subtitle {
          margin-bottom: 0;
-         text-transform: uppercase;
          font-weight: 500;
          font-size: 9px;
          line-height: 11px;
@@ -99,4 +98,40 @@ nav {
       color: #263238;
       margin-bottom: 0;
    }
+}
+
+.affordableSmall {
+   background: #f5f6fe;
+   border: 1px solid #fa8c16;
+   border-radius: 8px;
+   p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #263238;
+   }
+}
+
+.mainCard {
+   &__title {
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 36px;
+   }
+   .inputZip {
+      &__title {
+         font-weight: 500;
+         font-size: 23px;
+         line-height: 32px;
+      }
+      p {
+         font-weight: 500;
+         font-size: 14px;
+         line-height: 20px;
+         text-align: left;
+         color: #646464;
+      }
+   }
+}
+.affordableBig {
 }

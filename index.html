@@ -19,7 +19,7 @@
 			<div class="navbar-text text-light logo">
 				<a href="/" class="navbar-brand logo__title">HomeBuddy<span>.</span>
 				</a>
-				<p class="logo__subtitle">for homeowners</p>
+				<p class="logo__subtitle text-uppercase">for homeowners</p>
 			</div>
 			<a href="#" class="navbar-text text-light ms-auto linkToForm">Link to form</a>
 		</div>
@@ -27,7 +27,7 @@
 
 	<!-- ==== HERO section ==== -->
 	<section class="text-light pt-4 pb-5" style="background-color: #2f54eb;">
-		<div class="container text-left">
+		<div class="container text-start">
 			<div class="row hero">
 				<div class="col-lg-6">
 					<h2 class="hero__title mb-3">
@@ -52,7 +52,7 @@
 	<!-- ==== MAIN CONTENT ==== -->
 	<main>
 		<div class="container">
-			<div class="row text-left text-lg-center advantages py-5 my-1">
+			<div class="row text-start text-lg-center advantages py-5 my-1">
 				<div class="col-lg-3 d-inline-flex align-items-center d-lg-block py-4">
 					<img class="img-fluid pe-4 pe-lg-0 pb-lg-4" src="./img/icons/badge-done.svg" alt="Badge with a tick">
 					<p class="advantages__text">Lifetime warranty with 100% <br> no-clog guarantee</p>
@@ -65,7 +65,7 @@
 					<img class="img-fluid pe-4 pe-lg-0 pb-lg-4" src="./img/icons/badge-pig.svg" alt="Badge with a tick">
 					<p class="advantages__text">Installs over existing gutters saving you thousands</p>
 				</div>
-				<div class="col-lg-3 d-inline-flex align-items-center d-lg-block py-4">
+				<div class="col-lg-3 d-inline-flex align-items-center d-lg-block pt-4 pb-1">
 					<img class="img-fluid pe-4 pe-lg-0 pb-lg-4" src="./img/icons/badge-rate.svg" alt="Badge with a tick">
 					<span class="d-block">
 						<img src="./img/icons/star-icon.svg" alt="Star">
@@ -77,7 +77,51 @@
 					<p class="advantages__text">Customer rating</p>
 				</div>
 			</div>
-			<div class="row">
+
+			<div class="card d-lg-none affordableSmall">
+				<div class="card-body d-flex" style="padding: 10px;">
+					<img src="./img/icons/pig-icon.svg" alt="Pig Icon" class="img-fluid align-self-start" style="width:20px">
+					<p class="card-text text-start ps-2">
+						You will be surprised how affordable gutter guards are!
+					</p>
+				</div>
+			</div>
+
+			<div class="row mt-4 mb-5 mainCard">
+				<div class="card" style="background-color: #2F54EB;border-radius: 24px;">
+					<div class="card-body px-0">
+						<div class="card affordableBig d-none d-lg-block">
+							<div class="card-body d-flex" style="padding: 10px;">
+								<img src="./img/icons/pig-icon.svg" alt="Pig Icon" class="img-fluid align-self-start"
+									style="width:20px">
+								<p class="card-text text-left ps-2">
+									You will be surprised how affordable gutter guards are!
+								</p>
+							</div>
+						</div>
+						<h3 class="card-title text-light text-start mb-3 mainCard__title">See How Much Gutter Guards Cost In
+							The
+							XX,
+							XXX Area
+						</h3>
+						<div class="card inputZip">
+							<div class="card-body rounded-5">
+								<form class="row">
+									<label for="inputZip"
+										class="form-label card-title text-center text-nowrap inputZip__title">What is your
+										ZIP
+										Code?</label>
+									<input type="text" class="form-control py-3" id="inputZip" placeholder="Enter ZIP Code"
+										style="background-color:#F5F6FE;border:none;font-size:14px;">
+									<p>Free, no-obligation estimates.</p>
+									<a href="#" class="btn btn-warning">Get estimate</a>
+								</form>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
 			</div>
 		</div>
 
