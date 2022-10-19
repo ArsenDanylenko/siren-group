@@ -113,25 +113,15 @@ nav {
 }
 
 .mainCard {
-   &__title {
-      font-weight: 700;
-      font-size: 25px;
-      line-height: 36px;
-   }
    .inputZip {
-      &__title {
-         font-weight: 500;
-         font-size: 23px;
-         line-height: 32px;
-      }
       p {
          font-weight: 500;
          font-size: 14px;
-         line-height: 20px;
-         text-align: left;
          color: #646464;
       }
    }
-}
-.affordableBig {
+   @media screen and (min-width: 576px) {
+      padding-left: calc(24px + (90 - 24) * ((100vw - 576px) / (1440 - 576))) !important;
+      padding-right: calc(24px + (90 - 24) * ((100vw - 576px) / (1440 - 576))) !important;
+   }
 }

@@ -87,6 +87,11 @@ body {
   font-weight: 400;
 }
 
+@media screen and (max-width: 575px) {
+  .container {
+    max-width: 91.5%;
+  }
+}
 @media screen and (min-width: 1400px) {
   .container {
     max-width: 1170px;
@@ -195,20 +200,14 @@ nav .linkToForm {
   color: #263238;
 }
 
-.mainCard__title {
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 36px;
-}
-.mainCard .inputZip__title {
-  font-weight: 500;
-  font-size: 23px;
-  line-height: 32px;
-}
 .mainCard .inputZip p {
   font-weight: 500;
   font-size: 14px;
-  line-height: 20px;
-  text-align: left;
   color: #646464;
+}
+@media screen and (min-width: 576px) {
+  .mainCard {
+    padding-left: calc(24px + (90 - 24) * ((100vw - 576px) / (1440 - 576))) !important;
+    padding-right: calc(24px + (90 - 24) * ((100vw - 576px) / (1440 - 576))) !important;
+  }
 }
