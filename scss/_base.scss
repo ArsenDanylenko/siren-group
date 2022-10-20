@@ -16,16 +16,25 @@ body {
 }
 
 .btnEnabled {
-   background-color: #fa8c16;
+   background-color: #fa8c16 !important;
 }
 .btnHover {
-   &:hover,
-   &:active {
-      background-color: #f16e00;
+   &:hover {
+      background-color: #f16e00 !important;
    }
 }
 .btnPressed {
-   &:visited {
-      background-color: #e16803;
+   &:active {
+      background-color: #e16803 !important;
    }
+}
+
+.link {
+   &:hover {
+      text-decoration: underline !important;
+   }
+}
+
+._pressed {
+   color: #2f54eb;
 }

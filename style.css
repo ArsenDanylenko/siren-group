@@ -99,37 +99,46 @@ body {
 }
 
 .btnEnabled {
-  background-color: #fa8c16;
+  background-color: #fa8c16 !important;
 }
 
-.btnHover:hover, .btnHover:active {
-  background-color: #f16e00;
+.btnHover:hover {
+  background-color: #f16e00 !important;
 }
 
-.btnPressed:visited {
-  background-color: #e16803;
+.btnPressed:active {
+  background-color: #e16803 !important;
 }
 
-nav .logo__title {
+.link:hover {
+  text-decoration: underline !important;
+}
+
+._pressed {
+  color: #2f54eb;
+}
+
+nav .linkToForm {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.logo__title {
   font-weight: 700;
   font-size: 24.1743px;
   line-height: 29px;
 }
-nav .logo__title span {
+.logo__title span {
   color: #ff8d00;
 }
-nav .logo__subtitle {
+.logo__subtitle {
   margin-bottom: 0;
   font-weight: 500;
   font-size: 9px;
   line-height: 11px;
   letter-spacing: 0.15em;
   opacity: 0.8;
-}
-nav .linkToForm {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
 }
 
 .hero__title {
@@ -234,9 +243,50 @@ nav .linkToForm {
   font-size: 14px;
   color: #646464;
 }
+.mainCard .inputZip input {
+  background-color: #f5f6fe;
+  border: none;
+  color: #222222;
+}
+.mainCard .inputZip input:hover, .mainCard .inputZip input:focus {
+  border: 1px solid #2f54eb;
+}
+.mainCard .inputZip input:focus::-webkit-input-placeholder {
+  color: #646464;
+}
+.mainCard .inputZip input:focus:-ms-input-placeholder {
+  color: #646464;
+}
+.mainCard .inputZip input:focus::-ms-input-placeholder {
+  color: #646464;
+}
+.mainCard .inputZip input:focus::placeholder {
+  color: #646464;
+}
+.mainCard .inputZip input:focus .form-label {
+  color: #2f54eb !important;
+}
 @media screen and (min-width: 576px) {
   .mainCard {
     padding-left: calc(24px + (90 - 24) * ((100vw - 576px) / (1440 - 576))) !important;
     padding-right: calc(24px + (90 - 24) * ((100vw - 576px) / (1440 - 576))) !important;
+  }
+}
+
+footer .logo__title {
+  font-size: 30px;
+}
+@media screen and (min-width: 720px) {
+  footer .footer__item {
+    font-size: 12px !important;
+  }
+  footer .logo {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  footer .footer:last-child {
+    padding-bottom: 44px;
   }
 }

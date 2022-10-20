@@ -21,7 +21,7 @@
 				</a>
 				<p class="logo__subtitle text-uppercase">for homeowners</p>
 			</div>
-			<a href="#" class="navbar-text text-light ms-auto linkToForm">Link to form</a>
+			<a href="#" class="navbar-text text-light ms-auto link linkToForm">Link to form</a>
 		</div>
 	</nav>
 
@@ -116,26 +116,30 @@
 						</h3>
 
 						<!-- White card inside -->
-						<div class="card w-100 mb-4 mb-lg-5 mt-lg-2 px-3 align-self-stretch rounded-4 inputZip">
+						<div class="card w-100 mb-4 mb-lg-5 mt-lg-2 px-3 align-self-stretch rounded-4">
 							<div class="card-body align-self-center">
 
 								<!-- Input group -->
-								<form class="row d-flex flex-column">
-									<label for="inputZip"
-										class="form-label card-title text-center text-sm-nowrap fw-semibold fs-2 mt-4 mt-lg-5 mb-3">What
+								<form class="d-flex flex-column inputZip">
+									<h3 class="card-title text-center text-sm-nowrap fw-semibold fs-2 mt-4 mt-lg-5 mb-3">
+										What
 										is
 										your
 										ZIP
-										Code?</label>
-									<input type="text" class="form-control w-100 align-self-stretch fw-semibold py-3 px-3 fs-6"
-										id="inputZip" placeholder="Enter ZIP Code"
-										style="background-color:#F5F6FE;border:none; color: #222222;">
+										Code?
+									</h3>
+									<div class="form-floating">
+										<input type="text"
+											class="form-control w-100 align-self-stretch fw-semibold py-3 px-3 fs-6" id="inputZip"
+											placeholder="type the code here">
+										<label for="inputZip" class="form-label">Enter ZIP Code</label>
+									</div>
 									<p class="px-0 mb-1 mt-2 align-self-start text-start">Free, no-obligation estimates.</p>
 
 									<!-- Central btn -->
-									<a href="#" role="button"
+									<button type="button" href="#"
 										class="btn text-light fs-6 fw-semibold p-3 mt-3 mb-4 w-100 align-self-stretch btnEnabled btnHover btnPressed">Get
-										estimate</a>
+										estimate</button>
 								</form>
 							</div>
 						</div>
@@ -144,9 +148,29 @@
 				</div>
 			</div>
 		</div>
-
-
 	</main>
+
+	<!-- ==== FOOTER ==== -->
+	<footer style="background-color: #2f54eb;">
+		<div class="container">
+			<div class="footer col-md-8 mx-auto row">
+				<div class="text-light text-start text-md-center py-4 col-12 logo">
+					<a href="/" class="logo__title">HomeBuddy<span>.</span>
+					</a>
+				</div>
+				<a href="#" class="text-light fs-6 d-block d-lg-inline-block pb-3 col-md-2 link footer__item">Terms of
+					Use</a>
+				<a href="#" class="text-light fs-6 d-block d-lg-inline-block pb-3 col-md-2 link footer__item">Privacy
+					Policy</a>
+				<a href="#" class="text-light fs-6 d-block d-lg-inline-block pb-3 col-md-2 link footer__item">Cookie
+					Policy</a>
+				<a href="#" class="text-light fs-6 d-block d-lg-inline-block pb-3 col-md-4 link footer__item">
+					Do Not Sell My Personal Information
+				</a>
+				<a href="#" class="text-light fs-6 d-block d-lg-inline-block pb-5 col-md-2 link footer__item">Contact us</a>
+			</div>
+		</div>
+	</footer>
 
 
 
