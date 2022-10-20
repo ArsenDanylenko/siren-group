@@ -30,7 +30,7 @@
 		<div class="container text-start">
 			<div class="row hero">
 				<div class="col-lg-6">
-					<h2 class="hero__title mb-3">
+					<h2 class="hero__title mb-3 lh-base">
 						How <span>Over 410,000 Americans</span> Increased Their Property
 						Value <span>In Under 6 Hours*</span> With This Simple Upgrade.
 					</h2>
@@ -39,7 +39,7 @@
 					</p>
 				</div>
 				<div class="col-lg-6 hero__img">
-					<img src="./img/header-img.jpg" alt="A house wall" class="img-fluid w-100 hero__img_main">
+					<img src="./img/header-img.jpg" alt="A house wall" class="hero__img_main">
 					<a href="https://google.com" class="hero__img_nbc">
 						<p class="text-nowrap">As seen on</p>
 						<img src="./img/nbc.png" alt="NBC Icon" class="img-fluid">
@@ -78,6 +78,7 @@
 				</div>
 			</div>
 
+			<!-- Affordable card for sm screens only -->
 			<div class="card d-lg-none affordableSmall">
 				<div class="card-body d-flex align-self-center" style="padding: 10px;">
 					<img src="./img/icons/pig-icon.svg" alt="Pig Icon" class="img-fluid align-self-start" style="width:20px">
@@ -87,9 +88,12 @@
 				</div>
 			</div>
 
+			<!-- Main card of the section -->
 			<div class="row mt-4 mb-5">
 				<div class="card pb-lg-4 text-lg-center mainCard" style="background-color: #2F54EB;border-radius: 24px;">
 					<div class="card-body d-flex flex-column px-2">
+
+						<!-- Affordable card for big screens -->
 						<div class="card d-none d-lg-inline-block align-self-center mt-5 mb-3">
 							<div class="card-body d-flex" style="padding: 10px;">
 								<img src="./img/icons/pig-icon.svg" alt="Pig Icon" class="img-fluid align-self-start"
@@ -99,6 +103,8 @@
 								</p>
 							</div>
 						</div>
+
+						<!-- Main title of the card -->
 						<h3 class="card-title text-light text-start text-lg-center mb-3 mb-lg-4 text-capitalize fw-bold lh-base"
 							style="font-size: 25px;">
 							See How
@@ -108,24 +114,29 @@
 							XX,
 							XXX Area
 						</h3>
-						<div class="card mb-4 mb-lg-5 mt-lg-2 px-3 align-self-stretch rounded-4 inputZip">
+
+						<!-- White card inside -->
+						<div class="card w-100 mb-4 mb-lg-5 mt-lg-2 px-3 align-self-stretch rounded-4 inputZip">
 							<div class="card-body align-self-center">
+
+								<!-- Input group -->
 								<form class="row d-flex flex-column">
 									<label for="inputZip"
-										class="form-label card-title text-center text-nowrap fw-semibold fs-2 mt-4 mt-lg-5 mb-3">What
+										class="form-label card-title text-center text-sm-nowrap fw-semibold fs-2 mt-4 mt-lg-5 mb-3">What
 										is
 										your
 										ZIP
 										Code?</label>
-									<input type="text" class="form-control fw-semibold py-3 px-3 fs-6" id="inputZip"
-										placeholder="Enter ZIP Code"
-										style="background-color:#F5F6FE;border:none; color: #222222;     max-width: 90%; align-self: center;">
+									<input type="text" class="form-control w-100 align-self-stretch fw-semibold py-3 px-3 fs-6"
+										id="inputZip" placeholder="Enter ZIP Code"
+										style="background-color:#F5F6FE;border:none; color: #222222;">
 									<p class="px-0 mb-1 mt-2 align-self-start text-start">Free, no-obligation estimates.</p>
-									<a href="#" class="btn text-light fs-6 fw-semibold p-3 mt-3 mb-4"
-										style="background-color: #fa8c16; max-width: 90%; align-self: center;">Get
+
+									<!-- Central btn -->
+									<a href="#" role="button"
+										class="btn text-light fs-6 fw-semibold p-3 mt-3 mb-4 w-100 align-self-stretch btnEnabled btnHover btnPressed">Get
 										estimate</a>
 								</form>
-
 							</div>
 						</div>
 

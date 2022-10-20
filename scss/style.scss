@@ -54,8 +54,13 @@ nav {
    }
    &__img {
       position: relative;
+      overflow: hidden;
       &_main {
          border-radius: 20px;
+         object-fit: cover;
+         object-position: center;
+         width: 100%;
+         height: 100%;
       }
       &_nbc {
          position: absolute;
@@ -85,6 +90,16 @@ nav {
             margin: 0;
             padding: 0;
          }
+      }
+   }
+   @media screen and (min-width: 576px) {
+      &__title {
+         font-size: calc(23px + (35 - 23) * ((100vw - 576px) / (1440 - 576))) !important;
+         line-height: calc(28px + (48 - 28) * ((100vw - 576px) / (1440 - 576))) !important;
+      }
+      &__subtitle {
+         font-size: calc(14px + (23 - 14) * ((100vw - 576px) / (1440 - 576))) !important;
+         line-height: calc(20px + (32 - 20) * ((100vw - 576px) / (1440 - 576))) !important;
       }
    }
 }
