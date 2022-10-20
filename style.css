@@ -207,6 +207,9 @@ nav .linkToForm {
   margin: 0;
   padding: 0;
 }
+.hero__img_nbc:hover, .hero__img_nbc:active {
+  background-color: #cae2ff;
+}
 @media screen and (min-width: 576px) {
   .hero__title {
     font-size: calc(23px + (35 - 23) * ((100vw - 576px) / (1440 - 576))) !important;
@@ -238,6 +241,15 @@ nav .linkToForm {
   color: #263238;
 }
 
+.mainCard .inputZip {
+  width: 100%;
+  max-width: 320px;
+}
+.mainCard .inputZip .form-label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
 .mainCard .inputZip p {
   font-weight: 500;
   font-size: 14px;
@@ -276,6 +288,9 @@ nav .linkToForm {
 footer .logo__title {
   font-size: 30px;
 }
+footer .logo__title:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
 @media screen and (min-width: 720px) {
   footer .footer__item {
     font-size: 12px !important;
@@ -289,4 +304,193 @@ footer .logo__title {
   footer .footer:last-child {
     padding-bottom: 44px;
   }
+}
+
+.modal-header {
+  border: none;
+  padding: 0px;
+  position: relative;
+}
+.modal-header .btn-close {
+  position: absolute;
+  border-radius: 50%;
+  top: 17.5px;
+  right: 17.5px;
+  background: url("../img/icons/close-icon.svg") no-repeat center;
+  background-size: cover;
+  width: 10px;
+  height: 10px;
+}
+
+.modal-content .container {
+  max-width: unset;
+}
+@media screen and (min-width: 1200px) {
+  .modal-content .modal-title {
+    margin-top: 90px;
+  }
+}
+
+.form-check label {
+  padding: 29px 16px;
+}
+.form-check:hover, .form-check:active, .form-check:checked {
+  border-color: #fa8c16 !important;
+  cursor: pointer;
+}
+
+.formCheckYes {
+  background: url("../img/icons/modal-done-icon.svg") no-repeat center;
+  background-size: cover;
+  border: none;
+  width: 40px;
+  height: 40px;
+  margin: 16px 0px 16px 24px;
+  margin-left: 24px !important;
+}
+.formCheckYes:checked[type="radio"] {
+  background: url("../img/icons/modal-done-icon.svg") no-repeat center !important;
+  background-size: 38px 38px;
+}
+.formCheckYes:hover, .formCheckYes:active {
+  cursor: pointer;
+}
+
+.formCheckNo {
+  background: url("../img/icons/modal-cross-icon.svg") no-repeat center;
+  background-size: cover;
+  border: none;
+  width: 40px;
+  height: 40px;
+  margin: 16px 0px 16px 24px;
+  margin-left: 24px !important;
+}
+.formCheckNo:checked[type="radio"] {
+  background: url("../img/icons/modal-cross-icon.svg") no-repeat center !important;
+  background-size: 38px 38px;
+}
+.formCheckNo:hover, .formCheckNo:active {
+  cursor: pointer;
+}
+
+.radioBtns {
+  gap: 8px;
+}
+
+.modalBtn {
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 100%;
+  max-width: 250px;
+  font-size: 16px !important;
+  font-weight: 600;
+}
+
+.inputName,
+.inputMail {
+  padding: 0px;
+}
+.inputName .form-label,
+.inputMail .form-label {
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+.inputName input,
+.inputMail input {
+  background-color: #f5f6fe;
+  border: none;
+  color: #222222;
+}
+.inputName input:hover, .inputName input:focus,
+.inputMail input:hover,
+.inputMail input:focus {
+  border: 1px solid #2f54eb;
+}
+.inputName input:focus::-webkit-input-placeholder,
+.inputMail input:focus::-webkit-input-placeholder {
+  color: #646464;
+}
+.inputName input:focus:-ms-input-placeholder,
+.inputMail input:focus:-ms-input-placeholder {
+  color: #646464;
+}
+.inputName input:focus::-ms-input-placeholder,
+.inputMail input:focus::-ms-input-placeholder {
+  color: #646464;
+}
+.inputName input:focus::placeholder,
+.inputMail input:focus::placeholder {
+  color: #646464;
+}
+.inputName input:focus .form-label,
+.inputMail input:focus .form-label {
+  color: #2f54eb !important;
+}
+
+.safe {
+  position: relative;
+}
+.safe::before {
+  content: "";
+  background: url("../img/icons/safe.svg") no-repeat center;
+  background-size: cover;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 9.6px;
+  height: 12.8px;
+}
+
+@media screen and (min-width: 576px) {
+  .formCheckYes,
+  .formCheckNo {
+    width: calc(40px + (56 - 40) * ((100vw - 576px) / (1440 - 576))) !important;
+    height: calc(40px + (56 - 40) * ((100vw - 576px) / (1440 - 576))) !important;
+    margin: 10px !important;
+  }
+
+  .form-check {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: calc(0px + (18 - 0) * ((100vw - 576px) / (1440 - 576))) 0px !important;
+  }
+  .form-check label {
+    padding: 0px 0px 10px 0px;
+  }
+
+  .radioBtns {
+    padding: 0px calc(0px + (70 - 0) * ((100vw - 576px) / (1440 - 576))) !important;
+    gap: 16px;
+  }
+
+  .modalBtn {
+    -ms-flex-item-align: center;
+        align-self: center;
+    padding: 16px 24px;
+    width: unset;
+  }
+}
+.progress {
+  width: 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-bottom: 0px;
+  border-radius: 0;
+  height: 4px;
+  margin-top: 56px;
+  margin-bottom: 24px;
+}
+.progress .progress-bar {
+  width: 50%;
+  background-color: #52c41a;
 }

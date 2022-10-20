@@ -21,7 +21,7 @@
 				</a>
 				<p class="logo__subtitle text-uppercase">for homeowners</p>
 			</div>
-			<a href="#" class="navbar-text text-light ms-auto link linkToForm">Link to form</a>
+			<a href="#mainCard" class="navbar-text text-light ms-auto link linkToForm">Link to form</a>
 		</div>
 	</nav>
 
@@ -90,7 +90,8 @@
 
 			<!-- Main card of the section -->
 			<div class="row mt-4 mb-5">
-				<div class="card pb-lg-4 text-lg-center mainCard" style="background-color: #2F54EB;border-radius: 24px;">
+				<div id="mainCard" class="card pb-lg-4 text-lg-center mainCard"
+					style="background-color: #2F54EB;border-radius: 24px;">
 					<div class="card-body d-flex flex-column px-2">
 
 						<!-- Affordable card for big screens -->
@@ -137,7 +138,7 @@
 									<p class="px-0 mb-1 mt-2 align-self-start text-start">Free, no-obligation estimates.</p>
 
 									<!-- Central btn -->
-									<button type="button" href="#"
+									<button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
 										class="btn text-light fs-6 fw-semibold p-3 mt-3 mb-4 w-100 align-self-stretch btnEnabled btnHover btnPressed">Get
 										estimate</button>
 								</form>
@@ -172,6 +173,102 @@
 		</div>
 	</footer>
 
+	<!-- ==== MODAL-step 1 ==== -->
+	<div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+		aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog modal-fullscreen">
+			<div class="modal-content">
+				<!-- Modal header -->
+				<div class="modal-header">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-label="First modal" aria-valuenow="50"
+							aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="container col-sm-7">
+					<!-- Modal body -->
+					<div class="modal-body d-flex flex-column">
+						<h1 class="modal-title text-center fs-2 fs-lg-1 fw-bold mb-3" id="staticBackdropLabel">
+							Are you homeowner or
+							authrized
+							to make property
+							changes?
+						</h1>
+						<!-- Radio buttons -->
+						<div class="row justify-content-center radioBtns">
+							<div class="form-check col-11 col-sm-3 mb-2 mb-sm-4"
+								style="border: 2px solid #F5F6FE; border-radius: 16px; padding: 0px;">
+								<input class="form-check-input formCheckYes" type="radio" name="inlineRadioOptions"
+									id="inlineRadio1" value="option1">
+								<label class="form-check-label fs-6 text-sm-center" for="inlineRadio1">Yes</label>
+							</div>
+							<div class="form-check col-11 col-sm-3 mb-4"
+								style="border: 2px solid #F5F6FE; border-radius: 16px; padding: 0px;">
+								<input class="form-check-input formCheckNo" type="radio" name="inlineRadioOptions"
+									id="inlineRadio2" value="option2">
+								<label class="form-check-label fs-6 text-sm-center" for="inlineRadio2">No</label>
+							</div>
+						</div>
+						<!-- Next btn -->
+						<button type="button" class="btn text-light modalBtn btnEnabled btnHover btnPressed"
+							data-bs-target="#myModal2" data-bs-toggle="modal">Next</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ==== MODAL-step 2 ==== -->
+	<div class="modal" id="myModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+		aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog modal-fullscreen">
+			<div class="modal-content">
+				<!-- Modal header -->
+				<div class="modal-header">
+					<div class="progress">
+						<div class="progress-bar w-100" role="progressbar" aria-label="Second modal" aria-valuenow="50"
+							aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="container col-sm-7">
+					<!-- Modal body -->
+					<div class="modal-body d-flex flex-column">
+						<h1 class="modal-title text-center fs-2 fs-lg-1 fw-bold mb-3" id="staticBackdropLabel">
+							Who should I prepare this estimate for?
+						</h1>
+						<p class="text-center mt-2" style="color: #646464">Your choice: <span class="fw-semibold">Yes</span>
+						</p>
+						<!-- Inputs -->
+						<div class="row col-sm-6 align-self-center justify-content-center"
+							style="gap: 16px; max-width: 250px;">
+							<div class="form-floating mb-3 inputName">
+								<input type="text" class="form-control fw-semibold fs-6 inputName__input" id="floatingInput"
+									placeholder="type your name here">
+								<label for="floatingInput" class="form-label inputName__label">Full name</label>
+							</div>
+							<div class="form-floating mb-3 inputMail">
+								<input type="email" class="form-control fw-semibold fs-6 inputMail__input" id="floatingInput"
+									placeholder="name@example.com">
+								<label for="floatingInput" class="form-label inputMail__label">Email address</label>
+							</div>
+						</div>
+						<!-- Next btn -->
+						<button type="button" class="btn text-light modalBtn btnEnabled btnHover btnPressed"
+							data-bs-target="#myModal2" data-bs-dismiss="modal">Next</button>
+
+						<!-- Be sure -->
+						<div style="position: relative; width: 100%; max-width: 250px; align-self: center;">
+							<p class="safe"
+								style="font-weight: 500; font-size: 14px; line-height: 23px; text-align: center; color: #646464; margin-top: 16px;">
+								Safe, Secure and Confidential
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 	<script src="./js/main.js"></script>
