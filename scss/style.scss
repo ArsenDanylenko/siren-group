@@ -206,7 +206,7 @@ footer {
       border-radius: 50%;
       top: 17.5px;
       right: 17.5px;
-      background: url("../img/icons/close-icon.svg") no-repeat center;
+      background: url("./img/icons/close-icon.svg") no-repeat center;
       background-size: cover;
       width: 10px;
       height: 10px;
@@ -234,7 +234,7 @@ footer {
    }
 }
 .formCheckYes {
-   background: url("../img/icons/modal-done-icon.svg") no-repeat center;
+   background: url("./img/icons/modal-done-icon.svg") no-repeat center;
    background-size: cover;
    border: none;
    width: 40px;
@@ -242,7 +242,7 @@ footer {
    margin: 16px 0px 16px 24px;
    margin-left: 24px !important;
    &:checked[type="radio"] {
-      background: url("../img/icons/modal-done-icon.svg") no-repeat center !important;
+      background: url("./img/icons/modal-done-icon.svg") no-repeat center !important;
       background-size: 38px 38px;
    }
    &:hover,
@@ -251,7 +251,7 @@ footer {
    }
 }
 .formCheckNo {
-   background: url("../img/icons/modal-cross-icon.svg") no-repeat center;
+   background: url("./img/icons/modal-cross-icon.svg") no-repeat center;
    background-size: cover;
    border: none;
    width: 40px;
@@ -259,7 +259,7 @@ footer {
    margin: 16px 0px 16px 24px;
    margin-left: 24px !important;
    &:checked[type="radio"] {
-      background: url("../img/icons/modal-cross-icon.svg") no-repeat center !important;
+      background: url("./img/icons/modal-cross-icon.svg") no-repeat center !important;
       background-size: 38px 38px;
    }
    &:hover,
@@ -310,7 +310,7 @@ footer {
    position: relative;
    &::before {
       content: "";
-      background: url("../img/icons/safe.svg") no-repeat center;
+      background: url("./img/icons/safe.svg") no-repeat center;
       background-size: cover;
       position: absolute;
       top: 4px;
