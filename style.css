@@ -118,6 +118,10 @@ body {
   color: #2f54eb;
 }
 
+._checked {
+  border-color: #fa8c16 !important;
+}
+
 nav .linkToForm {
   font-weight: 500;
   font-size: 14px;
@@ -316,7 +320,7 @@ footer .logo__title:hover {
   border-radius: 50%;
   top: 17.5px;
   right: 17.5px;
-  background: url("../img/icons/close-icon.svg") no-repeat center;
+  background: url("./img/icons/close-icon.svg") no-repeat center;
   background-size: cover;
   width: 10px;
   height: 10px;
@@ -340,7 +344,7 @@ footer .logo__title:hover {
 }
 
 .formCheckYes {
-  background: url("../img/icons/modal-done-icon.svg") no-repeat center;
+  background: url("./img/icons/modal-done-icon.svg") no-repeat center;
   background-size: cover;
   border: none;
   width: 40px;
@@ -349,7 +353,7 @@ footer .logo__title:hover {
   margin-left: 24px !important;
 }
 .formCheckYes:checked[type="radio"] {
-  background: url("../img/icons/modal-done-icon.svg") no-repeat center !important;
+  background: url("./img/icons/modal-done-icon.svg") no-repeat center !important;
   background-size: 38px 38px;
 }
 .formCheckYes:hover, .formCheckYes:active {
@@ -357,7 +361,7 @@ footer .logo__title:hover {
 }
 
 .formCheckNo {
-  background: url("../img/icons/modal-cross-icon.svg") no-repeat center;
+  background: url("./img/icons/modal-cross-icon.svg") no-repeat center;
   background-size: cover;
   border: none;
   width: 40px;
@@ -366,7 +370,7 @@ footer .logo__title:hover {
   margin-left: 24px !important;
 }
 .formCheckNo:checked[type="radio"] {
-  background: url("../img/icons/modal-cross-icon.svg") no-repeat center !important;
+  background: url("./img/icons/modal-cross-icon.svg") no-repeat center !important;
   background-size: 38px 38px;
 }
 .formCheckNo:hover, .formCheckNo:active {
@@ -434,7 +438,7 @@ footer .logo__title:hover {
 }
 .safe::before {
   content: "";
-  background: url("../img/icons/safe.svg") no-repeat center;
+  background: url("./img/icons/safe.svg") no-repeat center;
   background-size: cover;
   position: absolute;
   top: 4px;

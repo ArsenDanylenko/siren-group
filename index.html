@@ -197,13 +197,13 @@
 						</h1>
 						<!-- Radio buttons -->
 						<div class="row justify-content-center radioBtns">
-							<div class="form-check col-11 col-sm-3 mb-2 mb-sm-4"
+							<div id="yes" class="form-check col-11 col-sm-3 mb-2 mb-sm-4"
 								style="border: 2px solid #F5F6FE; border-radius: 16px; padding: 0px;">
 								<input class="form-check-input formCheckYes" type="radio" name="inlineRadioOptions"
 									id="inlineRadio1" value="option1">
 								<label class="form-check-label fs-6 text-sm-center" for="inlineRadio1">Yes</label>
 							</div>
-							<div class="form-check col-11 col-sm-3 mb-4"
+							<div id="no" class="form-check col-11 col-sm-3 mb-4"
 								style="border: 2px solid #F5F6FE; border-radius: 16px; padding: 0px;">
 								<input class="form-check-input formCheckNo" type="radio" name="inlineRadioOptions"
 									id="inlineRadio2" value="option2">
@@ -211,8 +211,9 @@
 							</div>
 						</div>
 						<!-- Next btn -->
-						<button type="button" class="btn text-light modalBtn btnEnabled btnHover btnPressed"
-							data-bs-target="#myModal2" data-bs-toggle="modal">Next</button>
+						<button onclick="answer()" type="submit"
+							class="btn text-light modalBtn btnEnabled btnHover btnPressed" data-bs-target="#myModal2"
+							data-bs-toggle="modal">Next</button>
 					</div>
 				</div>
 			</div>
@@ -237,7 +238,8 @@
 						<h1 class="modal-title text-center fs-2 fs-lg-1 fw-bold mb-3" id="staticBackdropLabel">
 							Who should I prepare this estimate for?
 						</h1>
-						<p class="text-center mt-2" style="color: #646464">Your choice: <span class="fw-semibold">Yes</span>
+						<p class="text-center mt-2" style="color: #646464">Your choice:
+							<span id="result" class="fw-semibold"></span>
 						</p>
 						<!-- Inputs -->
 						<div class="row col-sm-6 align-self-center justify-content-center"
@@ -254,7 +256,7 @@
 							</div>
 						</div>
 						<!-- Next btn -->
-						<button type="button" class="btn text-light modalBtn btnEnabled btnHover btnPressed"
+						<button type="submit" class="btn text-light modalBtn btnEnabled btnHover btnPressed"
 							data-bs-target="#myModal2" data-bs-dismiss="modal">Next</button>
 
 						<!-- Be sure -->
